@@ -6,7 +6,7 @@ using namespace std;
 class Solution
 {
     public:    
-       vector <int> commonElements (int A[], int B[], int C[], int n1, int n2, int n3)
+       vector <int> commonElements (int A[], int B[], int C[], int n1, int n2, int n3)//this doesnot work if it contains duplicate elements.we can use set to remove duplicates
         {
             //code here.
             vector<int> common;
@@ -34,12 +34,12 @@ class Solution
                 {
                     c++;
                 }
-                while(A[a-1]==A[a])
-                a++;
-                while(B[b-1]==B[b])
-                b++;
-                while(C[c-1]==C[c])
-                c++;
+              //  while(A[a-1]==A[a])
+               // a++;
+               // while(B[b-1]==B[b])
+               // b++;
+                //while(C[c-1]==C[c])
+                //c++;
             }
             
             return common;
